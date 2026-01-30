@@ -829,7 +829,7 @@ section,
 .hero .social-links {
   margin-top: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
 }
 
