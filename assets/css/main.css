@@ -2154,6 +2154,38 @@ section,
   box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
+.portfolio .portfolio-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.portfolio .portfolio-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.portfolio .portfolio-scroll::-webkit-scrollbar-track {
+  background: color-mix(in srgb, var(--default-color), transparent 92%);
+  border-radius: 999px;
+}
+
+.portfolio .portfolio-scroll::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--accent-color), transparent 40%);
+  border-radius: 999px;
+}
+
+.portfolio .portfolio-item {
+  flex: 0 0 320px;
+  scroll-snap-align: start;
+}
+
+.portfolio .portfolio-card {
+  margin-bottom: 0;
+}
+
 @media (max-width: 992px) {
   .portfolio .portfolio-bottom .col-lg-4 {
     text-align: center !important;
