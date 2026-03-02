@@ -2013,7 +2013,7 @@ section,
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  transition: object-position 1.6s ease;
+  transition: object-position 4s ease;
 }
 
 .portfolio .portfolio-card .portfolio-image-container .portfolio-overlay {
